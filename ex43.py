@@ -53,3 +53,39 @@ from random import randint
 a = [1,2,3,5,3,6,2,8]
 #print len(a)
 print a[randint(0, len(a)-1)]
+
+
+# only while
+a = '3'
+action = raw_input(">")
+while a != action:
+    print "try a gain"
+    action = raw_input(">")
+
+print "goodbye!"
+
+# get data from class to class by using variable as a parameter.
+from random import randint
+class Cat(object):
+    def __init__(self, name):
+        self.name = name
+
+    def copy(self):
+        waht_it_has = self.name.guess()  # some parameter/variable gets other's function.
+
+class Dog(object):
+
+    senten = [
+        "It has four leg.",
+        "It has two eyes.",
+        "It has fur.",
+    ]
+    def __init__(self, name):
+        self.name = name
+
+    def guess(self):
+        print Dog.senten[randint(0, len(self.senten)-1)]
+
+name1 = Dog("Nancy")
+name2 = Cat(name1)
+name2.copy()
