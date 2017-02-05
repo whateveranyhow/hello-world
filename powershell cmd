@@ -1,0 +1,2 @@
+new-item -type file tests/__init__.py
+# make a .py named __init__ in a file named tests.
