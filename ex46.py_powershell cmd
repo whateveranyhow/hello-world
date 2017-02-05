@@ -3,7 +3,7 @@ new-item -type file tests/__init__.py
 
 
 
-a skeleton has bin; 
+a skeleton has bin;  #bin has script that are run on the command line, not modules
                NAME(__init__.py); 
                tests(__init__.py and NAME_tests.py); 
                docs;
